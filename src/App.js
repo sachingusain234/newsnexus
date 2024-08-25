@@ -6,8 +6,6 @@ const App = () => {
 
     useEffect(() => {
         const url = 'https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=65ee90bc1e8043149bf2fbbf788a7ae9';
-        
-        //const url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=65ee90bc1e8043149bf2fbbf788a7ae9'
         fetch(url)
             .then(response => {
                 if (!response.ok) {
