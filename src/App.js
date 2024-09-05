@@ -5,7 +5,7 @@ const App = () => {
     const [visibleArticles, setVisibleArticles] = useState(6); // Initial number of articles to display
 
     useEffect(() => {
-        const url = 'https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=65ee90bc1e8043149bf2fbbf788a7ae9';
+        const url = 'https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey={write your api key !!}';
         fetch(url)
             .then(response => {
                 if (!response.ok) {
